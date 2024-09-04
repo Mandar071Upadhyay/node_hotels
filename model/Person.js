@@ -26,6 +26,14 @@ const personSchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
+  username: {
+    required: true,
+    type: String
+  },
+  password: {
+    required: true,
+    type: String
+  },
 });
 const Person = mongoose.model("Person", personSchema);
 module.exports = Person;
